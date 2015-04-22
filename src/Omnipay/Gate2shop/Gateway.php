@@ -23,7 +23,8 @@ class Gateway extends AbstractGateway
         return array(
             'merchantSiteId' => '',
             'merchantId'     => '',
-            'secretKey'      => ''
+            'secretKey'      => '',
+            'customSiteName' => ''
         );
     }
 
@@ -55,6 +56,16 @@ class Gateway extends AbstractGateway
     public function setSecretKey($value)
     {
         return $this->setParameter('secretKey', $value);
+    }
+
+    public function getCustomSiteName()
+    {
+        return $this->getParameter('customSiteName');
+    }
+
+    public function setCustomSiteName($value)
+    {
+        return $this->setParameter('customSiteName', $value);
     }
 
     public function purchase(array $parameters = array())
