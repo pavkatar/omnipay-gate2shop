@@ -2,12 +2,12 @@
 
 namespace Omnipay\Gate2shop\Message;
 
-use Omnipay\Common\Message\AbstractResponse;
+use Payment\Response\JsonPaymentResponse;
 
 /**
  *  Gate2shop Complete Purchase Response
  */
-class CompletePurchaseResponse extends AbstractResponse
+class CompletePurchaseResponse extends JsonPaymentResponse
 {
     public function isSuccessful()
     {

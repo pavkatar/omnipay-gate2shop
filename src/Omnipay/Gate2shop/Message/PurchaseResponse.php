@@ -2,13 +2,13 @@
 
 namespace Omnipay\Gate2shop\Message;
 
-use Omnipay\Common\Message\AbstractResponse;
 use Omnipay\Common\Message\RedirectResponseInterface;
+use Payment\Response\JsonPaymentResponse;
 
 /**
  * Gate2shop Purchase Response
  */
-class PurchaseResponse extends AbstractResponse implements RedirectResponseInterface
+class PurchaseResponse extends JsonPaymentResponse implements RedirectResponseInterface
 {
     public function isSuccessful()
     {
@@ -27,7 +27,7 @@ class PurchaseResponse extends AbstractResponse implements RedirectResponseInter
 
     public function getRedirectMethod()
     {
-        return 'POST';
+        return 'GET';
     }
 
     public function getRedirectData()
