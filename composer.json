@@ -1,5 +1,5 @@
 {
-    "name": "mfauveau/omnipay-gate2shop",
+    "name": "pavkatar/omnipay-gate2shop",
     "type": "library",
     "description": "Gate2Shop driver for the Omnipay PHP payment processing library",
     "keywords": [
@@ -18,6 +18,10 @@
         {
             "name": "Matthieu Fauveau",
             "email": "mfauveau@gmail.com"
+        },
+        {
+            "name": "Pavel Nikolov",
+            "email": "pavkatar@gmail.com"
         }
     ],
     "autoload": {
